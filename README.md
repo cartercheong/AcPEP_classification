@@ -9,11 +9,11 @@ Step 1. Determine whether user choose genome screening method or not.
 
 	No need to apply genome screening
 	
-	--- python genome_seq/ORF_noCodon.py ${arg 1 -> path of fasta file} ${arg 2 -> jobid}
+	python genome_seq/ORF_noCodon.py ${arg 1 -> path of fasta file} ${arg 2 -> jobid}
 
 	Need to apply genome screening
 	
-	--- python genome_seq/ORF_Codon.py ${arg 1 -> path of fasta file} ${arg 2 -> codon table} ${arg 3 -> jobid}
+	python genome_seq/ORF_Codon.py ${arg 1 -> path of fasta file} ${arg 2 -> codon table} ${arg 3 -> jobid}
 	
 	* Codon Table in [1, 2, 3, 4, 5, 6, 9, 10, 11, 12, 13, 14, 16, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 33]
 
@@ -22,7 +22,7 @@ Remark:
 
 Step 2. Process classification model
 
-	--- python AcPEP_classification/main.py genome_${arg 1 -> jobid}/
+	python AcPEP_classification/main.py genome_${arg 1 -> jobid}/
 
 Remark: 
 	Before process classification model, have to use "conda activate" to activate classification anaconda environment. Here is package version requirements below.
@@ -36,7 +36,7 @@ Remark:
 
 Step 3. Process regression model
 
-	--- python xDeep-AcPEP-main/prediction/prediction.py genome_${arg 1 -> jobid}/
+	python xDeep-AcPEP-main/prediction/prediction.py genome_${arg 1 -> jobid}/
 
 Remark:
 	Before process regression model, have to use "conda activate" to activate regression anaconda environment. Here is package version requirements below.
@@ -52,7 +52,7 @@ Remark:
 
 Step 4. Combine classification result and regression result
 
-	--- python finalResult.py genome_${arg 1 -> jobid}/
+	python finalResult.py genome_${arg 1 -> jobid}/
 
 Step 5. Got result csv with below content in genome_${arg 1 -> jobid}_result.csv
 
