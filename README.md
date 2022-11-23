@@ -7,15 +7,15 @@ Arguments <br>
 
 Step 1. Determine whether user choose genome screening method or not. 
 
-	> No need to apply genome screening
+	No need to apply genome screening
 	
-	python genome_seq/ORF_noCodon.py ${arg 1 -> path of fasta file} ${arg 2 -> jobid}
+		python genome_seq/ORF_noCodon.py ${arg 1 -> path of fasta file} ${arg 2 -> jobid}
 
-	> Need to apply genome screening
+	Need to apply genome screening
 	
-	python genome_seq/ORF_Codon.py ${arg 1 -> path of fasta file} ${arg 2 -> codon table} ${arg 3 -> jobid}
+		python genome_seq/ORF_Codon.py ${arg 1 -> path of fasta file} ${arg 2 -> codon table} ${arg 3 -> jobid}
 	
-	> * Codon Table in [1, 2, 3, 4, 5, 6, 9, 10, 11, 12, 13, 14, 16, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 33]
+	* Codon Table in [1, 2, 3, 4, 5, 6, 9, 10, 11, 12, 13, 14, 16, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 33]
 
 Remark: 
 	For process screening, it required to have "biopython" in python package which anaconda environment can be migrate from AmPEP server. 
