@@ -1,9 +1,9 @@
 # AcPEP_classification
 =========
 
-Arguments
--> path of fasta file
--> jobid
+Arguments <br>
+-> path of fasta file <br>
+-> jobid <br>
 
 Step 1. Determine whether user choose genome screening method or not. 
 
